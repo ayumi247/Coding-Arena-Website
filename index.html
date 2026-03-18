@@ -1,359 +1,690 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Arena - Empowering Students with Future-Ready Skills</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Arena — Unlock Your Potential. Code Your Future.</title>
+  <meta name="description" content="Coding Arena partners with schools to teach students programming, AI, and entrepreneurship from Class 6 to 12. Real projects. Real skills. Real future." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <img src="logo.jpg" width="50px">
-            <a href="#" class="logo">
-                                Coding Arena
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                <i class="fas fa-sun"></i>
-            </button>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Empowering Students with <span class="highlight">Future-Ready Skills</span></h1>
-                <p class="hero-text">
-                    Coding Arena brings Education workshops on Gen AI, Cybersecurity, and various other concepts of Computer Science directly to schools. We're building the next generation of tech innovators.
-                </p>
-                <a href="#contact" class="btn btn-primary">
-                    <i class="fas fa-rocket"></i> Get Started
-                </a>
-            </div>
-            <div class="hero-image">
-                <div class="hero-graphic">
-                    <img src="logo.jpg" alt="not found" width="400px"></img>
-                    <i class=""></i>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-ring"></div>
+    <div class="loader-text">Coding Arena</div>
+  </div>
+</div>
 
-   <!-- Features Section -->
-<section id="features" class="features">
-    <div class="container">
-        <h2 class="section-title">Key Features</h2>
-        <p class="section-subtitle">
-            Comprehensive sessions designed to inspire and educate the next generation of tech leaders.
-        </p>
-
-        <div class="features-grid">
-
-            <!-- Generative AI -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-robot"></i>
-                </div>
-                <h3>Generative AI</h3>
-                <p>
-                    Hands-on experience with AI tools, prompt engineering, and understanding how AI is shaping the future.
-                </p>
-            </div>
-
-            <!-- Cybersecurity -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-shield-halved"></i>
-                </div>
-                <h3>Cybersecurity</h3>
-                <p>
-                    Learn ethical hacking basics, online safety, and how to protect digital assets from cyber threats.
-                </p>
-            </div>
-
-            <!-- Programming Fundamentals -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3>Programming Fundamentals</h3>
-                <p>
-                    Master coding concepts through interactive sessions in Python, web development, and more.
-                </p>
-            </div>
-
-            <!-- Web Development -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-                <h3>Web Development</h3>
-                <p>
-                    Web development is the process of building and maintaining websites and applications for the internet.
-                </p>
-            </div>
-
-            <!-- AI -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-brain"></i>
-                </div>
-                <h3>AI</h3>
-                <p>
-                    Artificial intelligence (AI) is the simulation of human intelligence by machines, enabling them to learn from experience and perform tasks like problem-solving and decision-making.
-                </p>
-            </div>
-
-            <!-- Data Science -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <h3>Data Science</h3>
-                <p>
-                    Data science is the field of study that uses math, statistics, and programming to extract meaningful insights from large amounts of data.
-                </p>
-            </div>
-
-            <!-- School-Focused -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-school"></i>
-                </div>
-                <h3>School-Focused</h3>
-                <p>
-                    Tailored curriculum designed specifically for school students of all skill levels.
-                </p>
-            </div>
-
-            <!-- Interactive Learning -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h3>Interactive Learning</h3>
-                <p>
-                    Engaging hands-on projects and real-world applications to make learning fun and practical.
-                </p>
-            </div>
-
-            <!-- Certification -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <h3>Certification</h3>
-                <p>
-                    Students receive certificates upon completion, adding value to their academic portfolio.
-                </p>
-            </div>
-
-        </div>
+<!-- ═══ NAVBAR ═══ -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="CA_Logo.png" alt="Coding Arena Logo" onerror="this.style.display='none'" />
+        <div class="nav-logo-text">Coding <span>Arena</span></div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="dark-toggle" id="darkToggle" title="Toggle Dark Mode">🌙</button>
+        <a href="#contact" class="btn btn-primary nav-cta">Partner With Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#curriculum">Curriculum</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          <span>Empowering India's Next Generation</span>
+        </div>
+        <h1 class="hero-title">
+          Where Students Learn to<br/>
+          <em>Build the Future</em>
+        </h1>
+        <p class="hero-desc">
+          Coding Arena partners with schools to deliver world-class programming, Artificial Intelligence, and Entrepreneurship education — from Class 6 to Class 12.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">🏫 Partner With Us</a>
+          <a href="#curriculum" class="btn btn-secondary">View Curriculum</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num counter" data-target="7" data-suffix="+">0+</div>
+            <div class="stat-label">Years of Study</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num counter" data-target="3" data-suffix=" Tracks">0</div>
+            <div class="stat-label">Learning Paths</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num counter" data-target="100" data-suffix="%">0%</div>
+            <div class="stat-label">Hands-on Projects</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-main">
+          <img src="logo.png" class="logo-large" alt="Coding Arena" onerror="this.outerHTML='<div style=\'width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#00d4ff,#a855f7);margin-bottom:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;\'>🎓</div>'" />
+          <div style="margin-bottom:6px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1rem;color:var(--text3);">Student Journey Preview</div>
+          <div class="code-line"><span class="kw">class</span> <span class="fn">Student</span>:</div>
+          <div class="code-line">&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">learn</span>(grade: <span class="str">6→12</span>):</div>
+          <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">code</span> → <span class="fn">build</span> → <span class="str">launch</span></div>
+          <div style="margin-top:16px;padding:10px 14px;border-radius:8px;background:rgba(0,212,255,0.08);font-size:0.82rem;color:var(--cyan);font-weight:700;border:1px solid rgba(0,212,255,0.2);">
+            ✅ Web Dev → AI/ML → Entrepreneurship
+          </div>
+        </div>
+        <div class="floating-tag tag-ai">🤖 AI & Machine Learning</div>
+        <div class="floating-tag tag-web">💻 Web Development</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-            <!-- Stats -->
-            <div class="stats-container">
-                <div class="stat-item">
-                    <h3>7+</h3>
-                    <p>Areas Covered</p>
-                </div>
-                <div class="stat-item">
-                    <h3>10+</h3>
-                    <p>Schools Reached</p>
-                </div>
-                <div class="stat-item">
-                    <h3>100%</h3>
-                    <p>Hands-On Learning</p>
-                </div>
-            </div>
+<!-- ═══ ABOUT ═══ -->
+<section id="about" class="section section-alt">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-block animate-on-scroll">
+        <div class="about-logo-wrap">
+          <img src="logo.png" alt="Coding Arena" onerror="this.style.display='none'" />
         </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works">
-        <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <p class="section-subtitle">A simple process to bring tech education to your school.</p>
-            
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Connect With Us</h3>
-                    <p>Reach out to discuss your school's requirements and student grade levels.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Customized Curriculum</h3>
-                    <p>We design a workshop plan tailored to your students' needs and interests.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Session Delivery</h3>
-                    <p>Our expert team conducts engaging, hands-on sessions at your school.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Certification & Follow-up</h3>
-                    <p>Students receive certificates and access to continued learning resources.</p>
-                </div>
-            </div>
+        <div class="about-accent">
+          Founded with a Mission<br/>
+          <span style="font-size:0.8rem;opacity:0.85">Unlock Every Child's Potential</span>
         </div>
-    </section>
-
-    <!-- Words from our team Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Feedback of our team</h2>
-            <p class="section-subtitle">Feedback from our team and educators who have been a part of this campaign.</p>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"We are here to change the way a person understands the computer and inculcate it from a very young age to make the difference."</p>
-                    <div class="testimonial-author">— Ayush Mittal, CEO</div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"A computer is a tool which needs to be learned from a young age. This could help us to transform different fields and revolutionize the way we work"</p>
-                    <div class="testimonial-author">— Sumeer Khatter, CTO</div>
-                </div>
-                
-                
-                </div>                
+      </div>
+      <div class="about-content animate-on-scroll">
+        <span class="badge">About Us</span>
+        <h2>Building India's Tech-Ready Generation</h2>
+        <p>
+          Coding Arena is a forward-thinking EdTech startup on a mission to bridge the gap between school education and real-world technology. We believe every student — regardless of background — deserves access to the skills that will define the next century.
+        </p>
+        <p>
+          We tie up directly with schools and deliver structured, age-appropriate programming and entrepreneurship education from Class 6 through Class 12. Our curriculum isn't just theory — students build real websites, train AI models, and even launch their own startups under expert guidance.
+        </p>
+        <div class="about-list">
+          <li>
+            <span class="icon">🎯</span>
+            <div>
+              <strong>School Partnerships</strong>
+              <span>We work directly with school administrations to integrate our program seamlessly</span>
             </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="team">
-        <div class="container">
-            <h2 class="section-title">👨‍💻 Meet Our Team</h2>
-            <p class="section-subtitle">The passionate minds behind Coding Arena.</p>
-            
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <span class="emoji">⚡</span>
-                    </div>
-                    <h3>Adithyan R</h3>
-                    <p class="team-role">Member</p>
-                </div>                
-                
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <span class="emoji">💡</span>
-                    </div>
-                    <h3>Sumeer Khattar</h3>
-                    <p class="team-role">CTO</p>
-                </div>
-
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <span class="emoji">🚀</span>
-                    </div>
-                    <h3>Ayush Mittal</h3>
-                    <p class="team-role">Founder, CEO</p>
-                </div>
-                
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <span class="emoji">🎯</span>
-                    </div>
-                    <h3>Satyam Raj Darshan</h3>
-                    <p class="team-role">Member</p>
-                </div>
-                
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <span class="emoji">🔥</span>
-                    </div>
-                    <h3>Piyush Chauhan</h3>
-                    <p class="team-role">Member</p>
-                </div>
+          </li>
+          <li>
+            <span class="icon">📚</span>
+            <div>
+              <strong>Structured Modules</strong>
+              <span>Professionally prepared curriculum materials for every class and topic</span>
             </div>
-        </div>
-    </section>
-
-    <!-- Goal Section -->
-    <section id="goal" class="goal">
-        <div class="container">
-            <h2 class="section-title">🎯 Our Goal</h2>
-            <p class="goal-text">
-                We aim to bridge the gap between classroom learning and real-world technology. 
-                By bringing workshops on Gen AI, Cybersecurity, and Computer Science directly to schools, 
-                we empower students with the skills they need to thrive in the digital age. 
-                Our mission is to make quality tech education accessible, engaging, and impactful for every student.
-            </p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact" class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-envelope"></i> codingarena.bussiness@gmail.com</p>
-                    <p><i class="fab fa-instagram"></i> @codingarena</p>
-                    <p><i class="fas fa-phone"></i> +91 98717 22204</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#how-it-works">How It Works</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#team">Team</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Workshops</h3>
-                    <ul>
-                        <li>Generative AI</li>
-                        <li>Cybersecurity</li>
-                        <li>Web Development</li>
-                        <li>Python Programming</li>
-                        <li>Artificial intelligence</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Support</h3>
-                    <ul>
-                        <li>School Partnerships</li>
-                        <li>Workshop Inquiry</li>
-                        <li>Student Resources</li>
-                        <li>FAQ</li>
-                    </ul>
-                </div>
+          </li>
+          <li>
+            <span class="icon">🌐</span>
+            <div>
+              <strong>Expert Network</strong>
+              <span>Students get access to our wide network of industry professionals and mentors</span>
             </div>
-            
-            <div class="footer-bottom">
-                <p>© 2026 Coding Arena. All rights reserved.</p>
+          </li>
+          <li>
+            <span class="icon">🚀</span>
+            <div>
+              <strong>Real Launch Support</strong>
+              <span>We help students actually launch their websites, models, and businesses</span>
             </div>
+          </li>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ═══ OUR AIM ═══ -->
+<section id="aim" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge">Our Aim</span>
+      <h2>What We're Here to Do</h2>
+      <p>Every decision we make is guided by these core goals for our students and partners.</p>
+    </div>
+    <div class="aim-grid">
+      <div class="aim-card animate-on-scroll">
+        <div class="aim-icon">🧠</div>
+        <h3>Build Problem Solvers</h3>
+        <p>Train students to think computationally and tackle real-world problems with code and logic from an early age.</p>
+      </div>
+      <div class="aim-card animate-on-scroll">
+        <div class="aim-icon">🤖</div>
+        <h3>Democratize AI Education</h3>
+        <p>Make Artificial Intelligence and Machine Learning accessible to school students — not just college graduates.</p>
+      </div>
+      <div class="aim-card animate-on-scroll">
+        <div class="aim-icon">💡</div>
+        <h3>Nurture Entrepreneurs</h3>
+        <p>Teach students the business fundamentals, financial literacy, and people skills to build and run real companies.</p>
+      </div>
+      <div class="aim-card animate-on-scroll">
+        <div class="aim-icon">🌱</div>
+        <h3>Bridge School & Industry</h3>
+        <p>Connect classroom learning with real industry expectations so students are ready the day they graduate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ KEY FEATURES ═══ -->
+<section id="features" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge">Key Features</span>
+      <h2>Why Schools Choose Coding Arena</h2>
+      <p>A complete ecosystem built to make technology education effective, engaging, and impactful.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon">📋</div>
+        <h3>Structured Curriculum</h3>
+        <p>Class-wise, progressive modules from HTML basics in Class 6 to advanced AI and LLMs in Class 12. Every step builds on the last.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon">🛠️</div>
+        <h3>100% Project-Based</h3>
+        <p>Students build real websites, train ML models, and launch actual businesses — not just read theory from a textbook.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon">🔀</div>
+        <h3>Personalized Paths</h3>
+        <p>Students choose their track — Advanced AI or Entrepreneurship — aligning their education with their passion and career goals.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon">👨‍🏫</div>
+        <h3>Expert Instructors</h3>
+        <p>Taught by professionals with real-world experience in tech and business, not just academic theory.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon">📦</div>
+        <h3>Ready-Made Modules</h3>
+        <p>Professionally designed learning materials, slides, and exercises delivered to schools — zero prep burden on teachers.</p>
+      </div>
+      <div class="feature-card animate-on-scroll">
+        <div class="feature-icon">🌐</div>
+        <h3>Launch & Network Support</h3>
+        <p>We help students launch their projects through our expert guidance and extensive professional network.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CURRICULUM ═══ -->
+<section id="curriculum" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge">Curriculum</span>
+      <h2>A 7-Year Journey of Growth</h2>
+      <p>Progressive, structured learning from Class 6 to Class 12 — with real choices at key milestones.</p>
+    </div>
+
+    <div class="curriculum-tabs">
+      <button class="tab-btn active" data-tab="tab-web">🌐 Web Development (6–8)</button>
+      <button class="tab-btn" data-tab="tab-ai">🤖 AI & Python (9–12)</button>
+      <button class="tab-btn" data-tab="tab-entre">💼 Entrepreneurship</button>
+    </div>
+
+    <!-- Web Dev Tab -->
+    <div class="tab-content active" id="tab-web">
+      <div class="curriculum-grid">
+        <div class="class-card animate-on-scroll">
+          <span class="class-badge">Class 6</span>
+          <h3>Foundations of Programming</h3>
+          <ul>
+            <li>Fundamentals of Programming</li>
+            <li>Problem Solving & Logic</li>
+            <li>Introduction to HTML</li>
+            <li>Building your first webpage</li>
+          </ul>
+        </div>
+        <div class="class-card animate-on-scroll">
+          <span class="class-badge">Class 7</span>
+          <h3>Styling & Interactivity</h3>
+          <ul>
+            <li>CSS — Styling the Web</li>
+            <li>Layouts, Flexbox & Grid</li>
+            <li>JavaScript Fundamentals</li>
+            <li>DOM Manipulation & Events</li>
+          </ul>
+        </div>
+        <div class="class-card animate-on-scroll">
+          <span class="class-badge">Class 8</span>
+          <h3>Databases & Major Projects</h3>
+          <ul>
+            <li>Database Management — MySQL</li>
+            <li>SQL Queries & Design</li>
+            <li>Full Web Development Project</li>
+            <li>Deploy a Live Website</li>
+          </ul>
+        </div>
+      </div>
+      <div class="path-divider animate-on-scroll">
+        <span class="choice-badge">⚡ After Class 8 — Choose Your Path: Advanced AI or Entrepreneurship</span>
+      </div>
+    </div>
+
+    <!-- AI Tab -->
+    <div class="tab-content" id="tab-ai">
+      <div class="curriculum-grid">
+        <div class="class-card animate-on-scroll">
+          <span class="class-badge">Class 9</span>
+          <h3>Python & Prompt Engineering</h3>
+          <ul>
+            <li>Introduction to Python</li>
+            <li>Python Programming Fundamentals</li>
+            <li>Prompt Engineering & AI Tools</li>
+            <li>Mini AI Projects</li>
+          </ul>
+        </div>
+        <div class="class-card animate-on-scroll">
+          <span class="class-badge">Class 10</span>
+          <h3>Python Libraries & AI Theory</h3>
+          <ul>
+            <li>NumPy, Pandas, Matplotlib</li>
+            <li>Fundamentals of Machine Learning</li>
+            <li>AI Theory & Concepts</li>
+            <li>Data Analysis Projects</li>
+          </ul>
+        </div>
+        <div class="class-card animate-on-scroll">
+          <span class="class-badge">Class 11</span>
+          <h3>Machine Learning in Practice</h3>
+          <ul>
+            <li>Training ML Models</li>
+            <li>Data Science Projects</li>
+            <li>Supervised & Unsupervised Learning</li>
+            <li>Real-world ML Applications</li>
+          </ul>
+        </div>
+        <div class="class-card animate-on-scroll">
+          <span class="class-badge">Class 12</span>
+          <h3>Advanced AI / Entrepreneurship</h3>
+          <ul>
+            <li>Advanced AI — Automation & LLMs</li>
+            <li>OR Mini Entrepreneurship Course</li>
+            <li>Capstone AI/Business Project</li>
+            <li>Launch with Mentor Support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Entrepreneurship Tab -->
+    <div class="tab-content" id="tab-entre">
+      <div style="text-align:center;margin-bottom:32px;color:var(--text3);">
+        Available as full track (Class 9–12) or condensed course (Class 12). Covers everything needed to start and run a real business.
+      </div>
+      <div class="curriculum-grid">
+        <div class="class-card animate-on-scroll">
+          <span class="class-badge" style="background:linear-gradient(135deg,#a855f7,#3b82f6)">Foundations</span>
+          <h3>Business Fundamentals</h3>
+          <ul>
+            <li>Fundamentals of Entrepreneurship</li>
+            <li>Idea Validation & Market Research</li>
+            <li>Business Model Design</li>
+            <li>Structuring a Startup</li>
+          </ul>
+        </div>
+        <div class="class-card animate-on-scroll">
+          <span class="class-badge" style="background:linear-gradient(135deg,#a855f7,#3b82f6)">Marketing</span>
+          <h3>Marketing & Sales</h3>
+          <ul>
+            <li>Digital Marketing</li>
+            <li>Traditional Marketing</li>
+            <li>Public Relations & Dealing</li>
+            <li>Brand Building</li>
+          </ul>
+        </div>
+        <div class="class-card animate-on-scroll">
+          <span class="class-badge" style="background:linear-gradient(135deg,#a855f7,#3b82f6)">Finance</span>
+          <h3>Finance & Operations</h3>
+          <ul>
+            <li>Quantitative Finance</li>
+            <li>Stock Market Operations</li>
+            <li>Accountancy Basics</li>
+            <li>Equity Management</li>
+          </ul>
+        </div>
+        <div class="class-card animate-on-scroll">
+          <span class="class-badge" style="background:linear-gradient(135deg,#a855f7,#3b82f6)">Business Law</span>
+          <h3>Partnerships & Legals</h3>
+          <ul>
+            <li>Business Relations</li>
+            <li>Business Deeds</li>
+            <li>Structuring Partnerships</li>
+            <li>Day-to-Day Company Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOW IT WORKS ═══ -->
+<section id="how-it-works" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge">How It Works</span>
+      <h2>Simple. Seamless. Impactful.</h2>
+      <p>Getting Coding Arena into your school is a straightforward process — we handle everything.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card animate-on-scroll">
+        <div class="step-num">1</div>
+        <h3>School Reaches Out</h3>
+        <p>A principal, teacher, or administrator contacts us through this website or directly to express interest.</p>
+      </div>
+      <div class="step-card animate-on-scroll">
+        <div class="step-num">2</div>
+        <h3>Discovery Meeting</h3>
+        <p>We schedule a meeting with the school leadership to understand needs, discuss the curriculum, and answer questions.</p>
+      </div>
+      <div class="step-card animate-on-scroll">
+        <div class="step-num">3</div>
+        <h3>Student Seminar</h3>
+        <p>We conduct an engaging introductory seminar for students to spark excitement and help them understand the journey ahead.</p>
+      </div>
+      <div class="step-card animate-on-scroll">
+        <div class="step-num">4</div>
+        <h3>Deliver Sessions</h3>
+        <p>Regular structured sessions begin, with our instructors delivering the curriculum, projects, and mentorship throughout the year.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TEAM ═══ -->
+<section id="team" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge">Our Team</span>
+      <h2>The People Behind Coding Arena</h2>
+      <p>Passionate educators, technologists, and entrepreneurs committed to transforming school education.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card animate-on-scroll">
+        <div class="team-avatar">👨‍💼</div>
+        <h3>Founder & CEO</h3>
+        <div class="team-role">Visionary Leader</div>
+        <p>Driving the mission to make quality tech education accessible to every school student in India.</p>
+      </div>
+      <div class="team-card animate-on-scroll">
+        <div class="team-avatar">📚</div>
+        <h3>Head of Curriculum</h3>
+        <div class="team-role">Education Lead</div>
+        <p>Designing structured, progressive modules that keep students engaged from Class 6 through Class 12.</p>
+      </div>
+      <div class="team-card animate-on-scroll">
+        <div class="team-avatar">🤖</div>
+        <h3>Lead AI Instructor</h3>
+        <div class="team-role">Technical Mentor</div>
+        <p>AI/ML specialist guiding students through Python, machine learning, and real-world AI projects.</p>
+      </div>
+      <div class="team-card animate-on-scroll">
+        <div class="team-avatar">💡</div>
+        <h3>Entrepreneurship Coach</h3>
+        <div class="team-role">Business Mentor</div>
+        <p>Seasoned entrepreneur helping students understand business models, finance, and how to run a company.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section id="testimonials" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge">Testimonials</span>
+      <h2>What People Are Saying</h2>
+      <p>Feedback from schools, students, and parents who have experienced the Coding Arena difference.</p>
+    </div>
+    <div class="testimonials-grid" id="testimonialsList">
+      <!-- Static fallback; replaced by API data if available -->
+      <div class="testimonial-card animate-on-scroll">
+        <div class="stars">★★★★★</div>
+        <p>"Coding Arena completely transformed how our students approach technology. The curriculum is structured brilliantly and the instructors are absolutely passionate."</p>
+        <div class="testimonial-author">
+          <strong>School Principal</strong>
+          <span>Delhi Public School</span>
+        </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll">
+        <div class="stars">★★★★★</div>
+        <p>"My daughter built her first website in Class 7. By Class 9 she was already writing Python scripts. Coding Arena opened up a world of possibilities for her."</p>
+        <div class="testimonial-author">
+          <strong>Parent</strong>
+          <span>Class 9 Student's Parent</span>
+        </div>
+      </div>
+      <div class="testimonial-card animate-on-scroll">
+        <div class="stars">★★★★★</div>
+        <p>"The entrepreneurship track taught me more about business in one year than I thought possible. I actually launched a small venture with my classmate!"</p>
+        <div class="testimonial-author">
+          <strong>Student</strong>
+          <span>Class 12, Entrepreneurship Track</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT & FEEDBACK ═══ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge">Get in Touch</span>
+      <h2>Let's Bring Coding Arena to Your School</h2>
+      <p>Fill out the form below and our team will reach out within 24 hours to schedule a discovery meeting.</p>
+    </div>
+
+    <div class="forms-grid">
+      <!-- Contact Form -->
+      <div class="form-card animate-on-scroll">
+        <h3>🏫 School Inquiry / Contact</h3>
+        <p class="sub">Interested in partnering? Drop us a message!</p>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cname">Your Name *</label>
+              <input type="text" id="cname" name="name" placeholder="Full Name" required />
+            </div>
+            <div class="form-group">
+              <label for="cemail">Email Address *</label>
+              <input type="email" id="cemail" name="email" placeholder="you@school.edu" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cphone">Phone Number</label>
+              <input type="tel" id="cphone" name="phone" placeholder="+91 98765 43210" />
+            </div>
+            <div class="form-group">
+              <label for="crole">Your Role</label>
+              <select id="crole" name="role">
+                <option value="principal">Principal</option>
+                <option value="teacher">Teacher</option>
+                <option value="parent">Parent</option>
+                <option value="student">Student</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cschool">School Name</label>
+            <input type="text" id="cschool" name="school_name" placeholder="Name of your school" />
+          </div>
+          <div class="form-group">
+            <label for="cmessage">Message *</label>
+            <textarea id="cmessage" name="message" placeholder="Tell us about your school and how we can help..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message →</button>
+          <div id="contactMsg" class="form-msg"></div>
+        </form>
+      </div>
+
+      <!-- Feedback Form -->
+      <div class="form-card animate-on-scroll">
+        <h3>⭐ Share Your Feedback</h3>
+        <p class="sub">Already working with us? We'd love to hear from you!</p>
+        <form id="feedbackForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Your Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="Full Name" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="femail" placeholder="you@email.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fschool">School / Organization</label>
+            <input type="text" id="fschool" name="fschool" placeholder="Your school or organization" />
+          </div>
+          <div class="form-group">
+            <label>Rating</label>
+            <div class="star-rating">
+              <button type="button" data-val="1">★</button>
+              <button type="button" data-val="2">★</button>
+              <button type="button" data-val="3">★</button>
+              <button type="button" data-val="4">★</button>
+              <button type="button" data-val="5">★</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Your Feedback *</label>
+            <textarea id="fmessage" name="fmessage" placeholder="Share your experience with Coding Arena..." required style="min-height:150px;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Submit Feedback →</button>
+          <div id="feedbackMsg" class="form-msg"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info-row">
+      <div class="contact-info-item animate-on-scroll">
+        <div class="ci-icon">📧</div>
+        <div>
+          <strong>Email Us</strong>
+          <span>contact@codingarena.in</span>
+        </div>
+      </div>
+      <div class="contact-info-item animate-on-scroll">
+        <div class="ci-icon">📞</div>
+        <div>
+          <strong>Call Us</strong>
+          <span>+91 98765 43210</span>
+        </div>
+      </div>
+      <div class="contact-info-item animate-on-scroll">
+        <div class="ci-icon">📍</div>
+        <div>
+          <strong>Location</strong>
+          <span>India — Serving Schools Nationwide</span>
+        </div>
+      </div>
+      <div class="contact-info-item animate-on-scroll">
+        <div class="ci-icon">🕒</div>
+        <div>
+          <strong>Response Time</strong>
+          <span>Within 24 hours</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA BANNER ═══ -->
+<section class="cta-section">
+  <div class="container" style="position:relative;z-index:1;">
+    <h2>Ready to Unlock Your Students' Potential?</h2>
+    <p>Join the growing list of schools partnering with Coding Arena to give students a real edge in the technology-driven world.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="#contact" class="btn btn-outline">Get In Touch Today</a>
+      <a href="#curriculum" class="btn" style="background:rgba(255,255,255,0.2);color:#fff;border:2px solid rgba(255,255,255,0.3);">Explore Curriculum</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Coding Arena" onerror="this.style.display='none'" />
+        <p>Empowering school students across India with the skills to build, create, and lead in the digital age.</p>
+        <div class="footer-tagline">"Unlock Your Potential. Code Your Future."</div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#curriculum">Curriculum</a></li>
+          <li><a href="#team">Our Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="#curriculum">Web Development</a></li>
+          <li><a href="#curriculum">Python & AI</a></li>
+          <li><a href="#curriculum">Machine Learning</a></li>
+          <li><a href="#curriculum">Entrepreneurship</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@codingarena.in">contact@codingarena.in</a></li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="#contact">Partner With Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Coding Arena. All rights reserved.</span>
+      <span>Made with ❤️ for India's future builders</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top -->
+<button id="scrollTop" title="Back to top">↑</button>
+
+<script src="script.js"></script>
 </body>
 </html>
