@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Arena | Unlock Your Potential, Code Your Future</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Coding Arena partners with schools to teach students programming, AI, and entrepreneurship from Class 6 to 12. Real projects. Real skills. Real future.">
+    <link rel="icon" type="image/png" href="./assets/logo.png">
+    <script>
+        // Check initial theme to prevent flashing
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "light") {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Ambient Background Glows -->
+    <div class="ambient-glow bg-glow-blue" style="top: -5%; left: -10%;"></div>
+    <div class="ambient-glow bg-glow-purple" style="top: 25%; right: -15%;"></div>
+    <div class="ambient-glow bg-glow-cyan" style="bottom: 15%; left: -5%;"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="Coding Arena Logo" onerror="this.style.display='none'">
+                <span>Coding Arena</span>
+            </div>
+            <ul class="nav-links">
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">☀️</button></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#how-it-works">Process</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact" class="btn-primary-nav">Partner With Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-eyebrow">
+                    <span class="dot"></span> Empowering India's Next Generation
+                </div>
+                <h1 class="hero-title">Where Students Learn to<br><span class="highlight">Build the Future</span></h1>
+                <p class="hero-tagline">Coding Arena partners with schools to deliver world-class programming, Artificial Intelligence, and Entrepreneurship education — from Class 6 to 12.</p>
+                
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-primary">🏫 Partner With Us</a>
+                    <a href="#curriculum" class="btn-secondary">View Curriculum</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-num">7+</div>
+                        <div class="stat-label">Years of Study</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">3</div>
+                        <div class="stat-label">Learning Paths</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">100%</div>
+                        <div class="stat-label">Hands-on Projects</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-section" id="about">
+            <div class="content-wrapper about-grid">
+                <div class="about-text-content">
+                    <span class="badge">About Us</span>
+                    <h2>Building India's Tech-Ready Generation</h2>
+                    <p class="lead-p">Coding Arena is a forward-thinking EdTech startup on a mission to bridge the gap between school education and real-world technology. We believe every student — regardless of background — deserves access to the skills that will define the next century.</p>
+                    <p>We tie up directly with schools and deliver structured, age-appropriate programming and entrepreneurship education from Class 6 through Class 12. Our curriculum isn't just theory — students build real websites, train AI models, and even launch their own startups under expert guidance.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item glass-card">
+                        <div class="icon">🎯</div>
+                        <div>
+                            <strong>School Partnerships</strong>
+                            <p>We work directly with school administrations to integrate our program seamlessly.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item glass-card">
+                        <div class="icon">📚</div>
+                        <div>
+                            <strong>Structured Modules</strong>
+                            <p>Professionally prepared curriculum materials for every class and topic.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item glass-card">
+                        <div class="icon">🌐</div>
+                        <div>
+                            <strong>Expert Network</strong>
+                            <p>Students get access to our wide network of industry professionals and mentors.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item glass-card">
+                        <div class="icon">🚀</div>
+                        <div>
+                            <strong>Real Launch Support</strong>
+                            <p>We help students actually launch their websites, models, and businesses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Aim Section -->
+        <section class="aim-section" id="aim">
+            <div class="content-wrapper">
+                <div class="section-heading">
+                    <span class="badge">Our Aim</span>
+                    <h2>What We're Here to Do</h2>
+                    <p>Every decision we make is guided by these core goals.</p>
+                </div>
+                <div class="aim-grid">
+                    <div class="glass-card aim-card">
+                        <div class="icon">🧠</div>
+                        <h3>Problem Solvers</h3>
+                        <p>Train students to think computationally and tackle real-world problems with code and logic.</p>
+                    </div>
+                    <div class="glass-card aim-card">
+                        <div class="icon">🤖</div>
+                        <h3>Democratize AI</h3>
+                        <p>Make AI and Machine Learning accessible to school students—not just college graduates.</p>
+                    </div>
+                    <div class="glass-card aim-card">
+                        <div class="icon">💡</div>
+                        <h3>Nurture Entrepreneurs</h3>
+                        <p>Teach business fundamentals, financial literacy, and people skills to build and run companies.</p>
+                    </div>
+                    <div class="glass-card aim-card">
+                        <div class="icon">🌱</div>
+                        <h3>School & Industry</h3>
+                        <p>Connect classroom learning with real industry expectations so students are absolutely ready.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="content-wrapper">
+                <div class="section-heading">
+                    <span class="badge">Key Features</span>
+                    <h2>Why Schools Choose Coding Arena</h2>
+                    <p>A complete ecosystem built to make technology education effective, engaging, and impactful.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="glass-card feat-card">
+                        <div class="feat-icon">📋</div>
+                        <h3>Structured Curriculum</h3>
+                        <p>Class-wise, progressive modules from HTML basics in Class 6 to advanced AI and LLMs in Class 12. Every step builds on the last.</p>
+                    </div>
+                    <div class="glass-card feat-card">
+                        <div class="feat-icon">🛠️</div>
+                        <h3>100% Project-Based</h3>
+                        <p>Students build real websites, train ML models, and launch actual businesses — not just read theory from a textbook.</p>
+                    </div>
+                    <div class="glass-card feat-card">
+                        <div class="feat-icon">🔀</div>
+                        <h3>Personalized Paths</h3>
+                        <p>Students choose their track — Advanced AI or Entrepreneurship — aligning their education with their passion.</p>
+                    </div>
+                    <div class="glass-card feat-card">
+                        <div class="feat-icon">👨‍🏫</div>
+                        <h3>Expert Instructors</h3>
+                        <p>Taught by professionals with real-world experience in tech and business, not just academic theory.</p>
+                    </div>
+                    <div class="glass-card feat-card">
+                        <div class="feat-icon">📦</div>
+                        <h3>Ready-Made Modules</h3>
+                        <p>Professionally designed learning materials, slides, and exercises delivered to schools — zero prep burden on teachers.</p>
+                    </div>
+                    <div class="glass-card feat-card">
+                        <div class="feat-icon">🌐</div>
+                        <h3>Network Support</h3>
+                        <p>We help students launch their projects through our expert guidance and extensive professional network.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Section -->
+        <section class="curriculum-section" id="curriculum">
+            <div class="content-wrapper">
+                <div class="section-heading">
+                    <span class="badge">Curriculum</span>
+                    <h2>A 7-Year Journey of Growth</h2>
+                    <p>Progressive, structured learning from Class 6 to Class 12.</p>
+                </div>
+
+                <!-- Foundation Level -->
+                <div class="curriculum-level relative-z">
+                    <h3 class="level-title">🌐 Web Development (Classes 6-8)</h3>
+                    <div class="curriculum-grid">
+                        <div class="glass-card curr-card">
+                            <span class="class-tag">Class 6</span>
+                            <h4>Foundations of Programming</h4>
+                            <ul>
+                                <li>Fundamentals of Programming</li>
+                                <li>Problem Solving & Logic</li>
+                                <li>Introduction to HTML</li>
+                                <li>Building your first webpage</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card curr-card">
+                            <span class="class-tag">Class 7</span>
+                            <h4>Styling & Interactivity</h4>
+                            <ul>
+                                <li>CSS — Styling the Web</li>
+                                <li>Layouts, Flexbox & Grid</li>
+                                <li>JavaScript Fundamentals</li>
+                                <li>DOM Manipulation & Events</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card curr-card">
+                            <span class="class-tag">Class 8</span>
+                            <h4>Databases & Major Projects</h4>
+                            <ul>
+                                <li>Database Management — MySQL</li>
+                                <li>SQL Queries & Design</li>
+                                <li>Full Web Development Project</li>
+                                <li>Deploy a Live Website</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider-text">⚡ After Class 8 — Choose Your Path</div>
+
+                <!-- AI Pathway -->
+                <div class="curriculum-level relative-z">
+                    <h3 class="level-title path-ai">🤖 AI & Machine Learning Track (Classes 9-12)</h3>
+                    <div class="curriculum-grid">
+                        <div class="glass-card curr-card border-ai">
+                            <span class="class-tag ai-tag">Class 9</span>
+                            <h4>Python & Prompt Engineering</h4>
+                            <ul>
+                                <li>Introduction to Python & Fundamentals</li>
+                                <li>Prompt Engineering & AI Tools</li>
+                                <li>Mini AI Projects</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card curr-card border-ai">
+                            <span class="class-tag ai-tag">Class 10</span>
+                            <h4>Python Libraries & AI Theory</h4>
+                            <ul>
+                                <li>NumPy, Pandas, Matplotlib</li>
+                                <li>Fundamentals of Machine Learning</li>
+                                <li>AI Theory & Data Analysis</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card curr-card border-ai">
+                            <span class="class-tag ai-tag">Class 11</span>
+                            <h4>Machine Learning in Practice</h4>
+                            <ul>
+                                <li>Training ML Models & Supervised Learning</li>
+                                <li>Data Science Projects</li>
+                                <li>Real-world ML Applications</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card curr-card border-ai">
+                            <span class="class-tag ai-tag">Class 12</span>
+                            <h4>Advanced AI</h4>
+                            <ul>
+                                <li>Advanced AI — Automation & LLMs</li>
+                                <li>Capstone AI Project</li>
+                                <li>Launch with Mentor Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entrepreneurship Pathway -->
+                <div class="curriculum-level relative-z">
+                    <h3 class="level-title path-startup">💼 Entrepreneurship Track</h3>
+                    <p style="text-align:center; color: var(--text-secondary); margin-bottom: 2rem;">Available as full track (Class 9-12) or condensed course (Class 12).</p>
+                    <div class="curriculum-grid">
+                        <div class="glass-card curr-card border-startup">
+                            <span class="class-tag startup-tag">Foundations</span>
+                            <h4>Business Fundamentals</h4>
+                            <ul>
+                                <li>Idea Validation & Market Research</li>
+                                <li>Business Model Design</li>
+                                <li>Structuring a Startup</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card curr-card border-startup">
+                            <span class="class-tag startup-tag">Marketing</span>
+                            <h4>Marketing & Sales</h4>
+                            <ul>
+                                <li>Digital & Traditional Marketing</li>
+                                <li>Public Relations & Dealing</li>
+                                <li>Brand Building</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card curr-card border-startup">
+                            <span class="class-tag startup-tag">Finance</span>
+                            <h4>Finance & Operations</h4>
+                            <ul>
+                                <li>Quantitative Finance</li>
+                                <li>Stock Market Operations</li>
+                                <li>Accountancy & Equity Management</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card curr-card border-startup">
+                            <span class="class-tag startup-tag">Legal</span>
+                            <h4>Partnerships & Legals</h4>
+                            <ul>
+                                <li>Business Relations & Deeds</li>
+                                <li>Structuring Partnerships</li>
+                                <li>Day-to-day Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section class="how-it-works-section" id="how-it-works">
+            <div class="content-wrapper">
+                <div class="section-heading">
+                    <span class="badge">Process</span>
+                    <h2>Simple. Seamless. Impactful.</h2>
+                    <p>Getting Coding Arena into your school is a straightforward process.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-step step-card glass-card">
+                        <div class="step-icon">1</div>
+                        <h3>School Reaches Out</h3>
+                        <p>A principal or administrator contacts us to express interest.</p>
+                    </div>
+                    <div class="timeline-step step-card glass-card">
+                        <div class="step-icon">2</div>
+                        <h3>Discovery Meeting</h3>
+                        <p>We meet to understand needs and discuss the curriculum integration.</p>
+                    </div>
+                    <div class="timeline-step step-card glass-card">
+                        <div class="step-icon">3</div>
+                        <h3>Student Seminar</h3>
+                        <p>An engaging introductory seminar to spark student excitement.</p>
+                    </div>
+                    <div class="timeline-step step-card glass-card">
+                        <div class="step-icon">4</div>
+                        <h3>Deliver Sessions</h3>
+                        <p>Regular structured sessions begin with our expert instructors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section" id="team">
+            <div class="content-wrapper">
+                <div class="section-heading">
+                    <span class="badge">Our Team</span>
+                    <h2>The People Behind Coding Arena</h2>
+                    <p>Passionate educators, technologists, and entrepreneurs.</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card glass-card">
+                        <img src="./assets/ayush.jpeg" alt="Ayush Mittal" onerror="this.src='./assets/logo.png'">
+                        <h3>Ayush Mittal</h3>
+                        <p class="role">Founder & CEO</p>
+                        <p class="bio">Driving the mission to make quality tech education accessible.</p>
+                    </div>
+                    <div class="team-card glass-card">
+                        <img src="./assets/piyush.jpeg" alt="Piyush Chauhan" onerror="this.src='./assets/logo.png'">
+                        <h3>Piyush Chauhan</h3>
+                        <p class="role">CMO & Entrepreneurship Coach</p>
+                        <p class="bio">Seasoned entrepreneur helping students understand business models.</p>
+                    </div>
+                    <div class="team-card glass-card">
+                        <img src="./assets/sumeer.jpeg" alt="Sumeer Khattar" onerror="this.src='./assets/logo.png'">
+                        <h3>Sumeer Khattar</h3>
+                        <p class="role">CTO & Lead Instructor</p>
+                        <p class="bio">AI/ML specialist guiding students through Python and real-world AI.</p>
+                    </div>
+                    <div class="team-card glass-card">
+                        <img src="./assets/satyam.jpeg" alt="Satyam Raj Darshan" onerror="this.src='./assets/logo.png'">
+                        <h3>Satyam Raj Darshan</h3>
+                        <p class="role">Head of Curriculum</p>
+                        <p class="bio">Designing structured, progressive modules that keep students engaged.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="content-wrapper glass-card cta-banner">
+                <h2>Ready to Unlock Your Students' Potential?</h2>
+                <p>Join the growing list of schools partnering with Coding Arena to give students a real edge in the technology-driven world.</p>
+                <div class="cta-actions">
+                    <a href="#contact" class="btn-primary">Get In Touch Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="./assets/logo.png" alt="Coding Arena" onerror="this.style.display='none'">
+                        <span>Coding Arena</span>
+                    </div>
+                    <p>Empowering school students across India with the skills to build, create, and lead in the digital age.</p>
+                    <div class="footer-tagline">"Unlock Your Potential. Code Your Future."</div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#curriculum">Curriculum</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#curriculum">Web Development</a></li>
+                        <li><a href="#curriculum">Python & AI</a></li>
+                        <li><a href="#curriculum">Machine Learning</a></li>
+                        <li><a href="#curriculum">Entrepreneurship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><span class="icon">📧</span> <a href="mailto:codingarena.business@gmail.com">codingarena.business@gmail.com</a></li>
+                        <li><span class="icon">📞</span> <a href="tel:+919871722204">+91 98717 22204</a></li>
+                        <li><span class="icon">📍</span> Delhi, Gurugram, Noida, Ghaziabad</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Coding Arena. All rights reserved.</p>
+                <p>Made with ❤️ for India's future builders.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
